@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: aquamarine;
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="msg">Cilque em mim</div>
+    <script>
+        
+        var p1 = window.document.getElementsByTagName('p')[0]
+        /*
+        p1.style.color = 'blue'
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        */
+
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'black'
+    </script>
+</body>
+</html>s
